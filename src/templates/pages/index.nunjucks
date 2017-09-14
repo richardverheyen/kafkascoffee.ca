@@ -1,0 +1,11 @@
+{% extends "layout.nunjucks" %}
+{% block meta %}
+  <title>Kafka's Coffee &amp; Tea</title>
+  <meta name="description" content="serious about coffee and not much else">
+{% endblock %}
+{% block id %}landing{% endblock %}
+{% block main %}
+
+  <section id="hero"></section>
+
+{% endblock %}

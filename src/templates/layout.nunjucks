@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="Copyright 2016 all rights reserved">
+    <meta name="authors" content="Richard Verheyen">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="ioMjIIMP2lu2mdNGjdrooe7XUsQ2AIbCtzigPclkQmE"/>
+    {% block meta %}{% endblock %}
+    <link href="/assets/css/styles.min.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/scripts.js"></script>
+    {% include "partials/favicons.html" %}
+  </head>
+
+  <body id="{% block id %}{% endblock %}">
+    {% include "partials/header.html" %}
+    <main>
+      {% block main %}{% endblock %}
+    </main>
+    {% include "partials/footer.html" %}
+    {% include "partials/outdated-browsers.html" %}
+  </body>
+
+</html>
