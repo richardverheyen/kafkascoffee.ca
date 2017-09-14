@@ -14,7 +14,7 @@ The [website](http://www.kafkascoffee.ca/) of ...
 1. Make sure you have [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md), [Yarn](https://yarnpkg.com/en/docs/getting-started) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed globally
 2. `git clone https://github.com/richardverheyen/kafkascoffee.ca.git ~/richardverheyen/kafkascoffee.ca`
 3. `cd ~/richardverheyen/kafkascoffee`
-4. `yarn install; yarn add gulp`
+4. `npm install; bower install`
 5. `gulp`
 5. Go to [http://localhost:9000/](http://localhost:9000/)
 6. Open code with whatever rocks your boxers, I use [Atom](https://atom.io/): `atom .`
