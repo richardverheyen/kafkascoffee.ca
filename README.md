@@ -12,7 +12,7 @@ The [website](http://www.kafkascoffee.ca/) of ...
 
 #### Setup
 1. Make sure you have [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md), [Yarn](https://yarnpkg.com/en/docs/getting-started) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed globally
-2. `git clone https://github.com/janwerkhoven/kafkascoffee.ca.git ~/richardverheyen/kafkascoffee.ca`
+2. `git clone https://github.com/richardverheyen/kafkascoffee.ca.git ~/richardverheyen/kafkascoffee.ca`
 3. `cd ~/richardverheyen/kafkascoffee`
 4. `yarn install; yarn add gulp`
 5. `gulp`
