@@ -1,0 +1,16 @@
+{
+  "html": {
+    "indent_inner_html": true,
+    "indent_size": 2,
+    "max_preserve_newlines": 0
+  },
+  "css": {
+    "indent_size": 2,
+    "brace-style": "collapse"
+  },
+  "js": {
+    "indent_size": 2,
+    "jslint_happy": true,
+    "max_preserve_newlines": 1
+  }
+}
