@@ -6,6 +6,8 @@
 {% block id %}landing{% endblock %}
 {% block main %}
 
-  <section id="hero"></section>
+  <section id="hero">
+    <div></div>
+  </section>
 
 {% endblock %}

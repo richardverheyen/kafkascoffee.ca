@@ -20,8 +20,8 @@
 'use strict';
 
 const project = {
-  name: 'Peta Sitcheff',
-  url: 'http://www.petasitcheff.com/'
+  name: 'Kafka\'s Coffee and Tea',
+  url: 'http://www.kafkascoffee.ca/'
 };
 
 const autoprefixer = require('gulp-autoprefixer');
@@ -73,15 +73,14 @@ gulp.task('compileHtml', function() {
       path: ['src/templates'],
       data: {
         project: project,
-        app_name: 'Peta Sitcheff',
-        app_url: 'http://www.petasitcheff.com/',
-        linkedin: 'https://www.linkedin.com/in/peta-sitcheff-20b8b483/'
+        app_name: 'Kafka\'s Coffee and Tea',
+        app_url: 'http://www.kafkascoffee.ca/',
       }
     }))
     .pipe(prettify({ config: './jsbeautifyrc.json' }))
     .pipe(gulp.dest('dist'))
     .pipe(sitemap({
-      siteUrl: 'http://www.petasitcheff.com/',
+      siteUrl: 'http://www.kafkascoffee.ca/',
       changefreq: 'monthly',
       priority: 0.5
     }))
