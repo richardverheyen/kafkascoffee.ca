@@ -1,1 +1,61 @@
-#landing {}
+#landing {
+  #hero {
+    background: url('/assets/images/hero.jpg');
+    background-size: cover;
+    background-position-x: 36%;
+    div {
+      display: flex;
+      align-items: flex-end;
+      height: 178vw;
+      h2 {
+        color: white;
+        margin-bottom: 20px;
+        line-height: 130%;
+      }
+    }
+  }
+}
+#intro {
+  div {}
+}
+#hours-map {
+  > div {
+    h2 {}
+    ul {
+      li {}
+    }
+    > a {
+      display: block;
+      width: 280px;
+      height: 200px;
+      #map {
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+  }
+}
+#exhibit {
+  div {
+    h2 {}
+    ul {
+      li {}
+    }
+    div {
+      a {
+        img {
+          max-width: 87.5vw;
+        }
+      }
+    }
+  }
+}
+#coffee-truck {
+  div {
+    h2 {}
+    p {
+      a {}
+    }
+  }
+}

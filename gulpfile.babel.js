@@ -114,7 +114,7 @@ gulp.task('lintJs', function() {
   return gulp.src(['src/js/app.js'])
     .pipe(eslint())
     .pipe(eslint.format())
-    .pipe(eslint.failAfterError())
+    // .pipe(eslint.failAfterError())
 });
 
 // Create temp/scripts.js
@@ -135,6 +135,7 @@ gulp.task('concatJs', function() {
   return gulp.src([
       'bower_components/jquery/dist/jquery.min.js',
       'bower_components/velocity/velocity.min.js',
+      'bower_components/instafeed.js/instafeed.min.js',
       'src/js/vendor/google-analytics.js',
       'temp/scripts.js'
     ])

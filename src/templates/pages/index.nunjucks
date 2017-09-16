@@ -7,7 +7,129 @@
 {% block main %}
 
   <section id="hero">
-    <div></div>
+    <div>
+      <h2>We’re serious about
+        <br/>coffee and not much else.</h2>
+    </div>
+  </section>
+
+  <section id="intro">
+    <div>
+      <p>We serve espresso based drinks, filter coffee, tea, nitro cold brew, lemonade, and pastries</p>
+    </div>
+  </section>
+
+  <section id="hours-map">
+    <div>
+      <h2>Hours:</h2>
+      <ul>
+        <li>7am - 10pm Mon-Thu</li>
+        <li>7am - 8pm Fri</li>
+        <li>8am - 8pm Sat - Sun</li>
+        <li>8am - 8pm Holidays</li>
+      </ul>
+      <a href="">
+        <div id='map' style="width: 280px; height: 200px"></div>
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoicmljaGFyZHZlcmhleWVuIiwiYSI6ImNqMms4ZjRmYTAwMHAzM285aXg0aXRtZmMifQ.UgSdnfuJU4EmzBlwHBWtDw';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [
+              -123.101227, 49.262421
+            ],
+            zoom: 16,
+            pitch: 45,
+            bearing: 270
+          });
+          map.on('load', function () {
+            // Insert the layer beneath any symbol layer.
+            var layers = map.getStyle().layers.reverse();
+            var labelLayerIdx = layers.findIndex(function (layer) {
+              return layer.type !== 'symbol';
+            });
+            var labelLayerId = labelLayerIdx !== -1
+              ? layers[labelLayerIdx].id
+              : undefined;
+            map.addLayer({
+              'id': '3d-buildings',
+              'source': 'composite',
+              'source-layer': 'building',
+              'filter': [
+                '==', 'extrude', 'true'
+              ],
+              'type': 'fill-extrusion',
+              'minzoom': 15,
+              'paint': {
+                'fill-extrusion-color': '#aaa',
+                'fill-extrusion-height': {
+                  'type': 'identity',
+                  'property': 'height'
+                },
+                'fill-extrusion-base': {
+                  'type': 'identity',
+                  'property': 'min_height'
+                },
+                'fill-extrusion-opacity': .6
+              }
+            }, labelLayerId);
+          });
+        </script>
+      </a>
+    </div>
+  </section>
+
+  <section id="exhibit">
+    <div>
+      <h2>Current Exhibit</h2>
+      <ul>
+        <li>Metamorphosis</li>
+        <li>Bill Wilkinson</li>
+        <li>January 19, 2017 to March 6, 2017</li>
+      </ul>
+      <div id="instafeed"></div>
+    </div>
+  </section>
+
+  <section id="coffee-truck">
+    <div>
+      <h2>Coffee Truck</h2>
+      <p>Kafka’s Coffee on Wheels is a full-service cafe. You''ll find us at festivals, farmers markets, and events around the city. We'd love to
+        <a href="/#contact">bring our truck to you!</a>
+      </p>
+      <a class="twitter-timeline" data-height="260" href="https://twitter.com/Kafkascoffeetea">Tweets by Kafkascoffeetea</a>
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>
+
+  <section id="wholesale">
+    <div>
+      <h2>Wholesale</h2>
+      <p>We have helped many coffee shops and top restaurants develop their coffee service and we would love to help you! If you are interested in chatting about coffee please
+        <a href="/#contact">contact us</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div>
+      <p>We are pretty good at checking our emails and will respond with impressive speed.</p>
+      <div>
+        <p>Chat with us about:<br/>
+          Art Exhibitions<br/>
+          The Coffee Truck<br/>
+          Wholesale<br/>
+          Anything else.</p>
+        <p>2525 Main Street Vancouver,
+          <br/>BC V5T 3E5
+          <br/>(604) 569-2967</p>
+      </div>
+      <ul>
+        <li><img src="/assets/img/social/facebook.svg" alt="social media facebook"></li>
+        <li><img src="/assets/img/social/twitter.svg" alt="social media twitter"></li>
+        <li><img src="/assets/img/social/instagram.svg" alt="social media instagram"></li>
+      </ul>
+    </div>
   </section>
 
 {% endblock %}

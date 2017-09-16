@@ -12,6 +12,8 @@
     {% block meta %}{% endblock %}
     <link href="/assets/css/styles.min.css" rel="stylesheet" type="text/css">
     <script src="/assets/js/scripts.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet'/>
     {% include "partials/favicons.html" %}
   </head>
 

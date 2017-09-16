@@ -50,10 +50,16 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $Amplitude;
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
   margin: 0;
+}
+
+li,
+p {
+  font-family: $OpenSans;
 }
 
 // For the outdated browser message

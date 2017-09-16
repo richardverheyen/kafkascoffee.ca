@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "homepage": "",
   "description": "",
-  "author": "Jan Werkhoven, Richard Verheyen & Hannah Sutton",
+  "author": "Richard Verheyen",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janwerkhoven/sitcheff.git"
+    "url": "git+https://github.com/richardverheyen/kafkacoffee.ca.git"
   },
   "bugs": {
-    "url": "https://github.com/janwerkhoven/sitcheff/issues"
+    "url": "https://github.com/richardverheyen"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -33,6 +33,7 @@
     "gulp-sitemap": "^4.2.0",
     "gulp-size": "^2.1.0",
     "gulp-uglify": "^2.0.1",
+    "instafeed.js": "^1.4.1",
     "node-normalize-scss": "^1.4.0"
   },
   "dependencies": {

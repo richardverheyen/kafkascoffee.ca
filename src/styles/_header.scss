@@ -1,19 +1,22 @@
 header {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  top: 10px;
+  left: 50vw;
+  transform: translateX(-50%);
   div {
     h1 {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       text-align: center;
-      font-family: $Amplitude;
+      background: transparent;
       text-transform: uppercase;
       line-height: 100%;
       width: 70px;
       height: 70px;
-      border: 2px solid black;
-      margin: 10px auto 0;
+      border: 2px solid white;
+      color: white;
+      margin: 0 auto;
     }
   }
 }
